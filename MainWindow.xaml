@@ -1,0 +1,39 @@
+﻿<Window x:Class="avaliacao_d7_interface_de_usuario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:avaliacao_d7_interface_de_usuario"
+        mc:Ignorable="d"
+        Title="D7 - Avaliação" Height="660" Width="480">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Autenticação de usuário" FontSize="24" Margin="96,60" FontWeight="Bold"  />
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Margin="60,145" Text="Usuário"  FontSize="16" />
+        </StackPanel>
+
+        <StackPanel>
+            <TextBox Margin="60,180" Background="LightGray" Height="60" Width="360" 
+                     VerticalContentAlignment="Center" FontSize="24" Padding="5" x:Name="Email" />
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Margin="60,325" Text="Senha" FontSize="16" />
+        </StackPanel>
+
+        <StackPanel>
+           
+            <PasswordBox Margin="60,360" Background="LightGray"  Height="60" 
+                         Width="360" VerticalContentAlignment="Center" FontSize="24" Padding="5" x:Name="Password"/>
+        </StackPanel>
+
+        <StackPanel>
+            <Button Margin="120,540" Content="Acessar" FontSize="16" Height="60" Width="240" HorizontalContentAlignment="Center" Click="Button_Click"/>
+           
+        </StackPanel>
+
+    </Grid>
+</Window>
